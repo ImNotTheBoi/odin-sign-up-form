@@ -26,20 +26,75 @@
     isolation: isolate;
   }
 
+/* Fonts */
+@font-face {
+    font-family: norse-bold;
+    src: 
+        url("fonts/norse-bold-webfont.woff") format("woff"),
+        url("fonts/norse-bold-webfont.woff2") format("woff2")
+    ;
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     display: flex;
 }
 h1 {
     color: #E1D7B7;
 }
+
 .img-section {
+    width: 35vw;
+    position: relative;
+}
+
+.background-img {
     height: 100vh;
-    width: 30vw;
-    background-color: #c37c7c;
+    width: 100%;
+    object-fit: cover;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 8px;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 15%;
+    background-color: #1E2A5E80;
+}
+.logo {
+    height: 70px;
+    color: #E1D7B7;
+}
+
+.header-text {
+    font-family: "norse-bold", sans-serif;
+    font-size: 50px;
+    color: #E1D7B7;
+}
+.credits {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 95%;
+    text-align: center;
+    background-color: #1E2A5E80;
+    color: #E1D7B7;
+    font-size: smaller;
+}
+
+.credits a {
+    color: #E1D7B7
 }
 
 .form-section {
     height: 100vh;
-    width: 70vw;
+    width: 65vw;
     background-color: #55679C;
 }
