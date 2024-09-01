@@ -15,22 +15,61 @@
         </header>
         <div class="credits">Photo by <a href="https://unsplash.com/@eberhardgross">eberhard</a></div>
     </section>
-    <section class="form-section">
-        <section>
-            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel rem omnis maxime ad ab suscipit consequuntur nobis ut nulla reiciendis. Molestias eum a aperiam! Alias molestiae voluptatibus qui minus obcaecati.</h1>
+    <section class="main-section">
+        <section class="hero-text-section">
+            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel rem omnis maxime ad ab suscipit consequuntur nobis ut nulla reiciendis.</h1>
+            <br>
+            <h1>Sign Up Now!</h1>
         </section>
-        <section>
-            <h1></h1>
-            <form action="" method="get" class="create-account">
-                <div><label><input type="text"></label></div>
-                <div><label><input type="text"></label></div>
-                <div><label><input type="text"></label></div>
-                <div><label><input type="text"></label></div>
-                <div><label><input type="text"></label></div>
-                <div><label><input type="text"></label></div>
-                <button type="submit"></button>
+        <section class="form-section">
+            <h1>Let's Do This!</h1>
+            <form action="" method="get" class="create-account" id="info-form">
+                <section>
+                    <div>
+                        <label for="firstName">
+                            <div>First Name:</div>
+                            <input type="text" id="firstName" name="firstName" maxlength="20" required>
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <div>Email</div>
+                            <input type="text" id="email" name="email" pattern="(.+@[a-z]+.[a-z]+)?" placeholder="example@gmail.com" maxlength="80" required>
+                        </label>
+                    </div>
+                    <div>
+                        <label for="password">
+                            <div>Password:</div>
+                            <input type="password" id="password" name="password" minlength="5" maxlength="30" required>
+                        </label>
+                    </div>
+                </section>
+                <section>
+                    <div>
+                        <label for="lastName">
+                            <div>Last Name:</div>
+                            <input type="text" id="lastName" name="lastName" maxlength="20" required>
+                        </label>
+                    </div>
+                    <div>
+                        <label for="phoneNumber">
+                            <div>Phone Number:</div>
+                            <input type="text" id="phoneNumber" name="phoneNumber" pattern="[\d]{10}" placeholder="9914739015" maxlength="10" required>
+                        </label>
+                    </div>
+                    <div>
+                        <label for="confirmPassword">
+                            <div>Confirm Password:</div>
+                            <input type="password" id="confirmPassword" name="confirmPassword" required>
+                        </label>
+                    </div>
+                </section>
             </form>
             <div></div>
+        </section>
+        <section class="button-section">
+            <button type="submit" form="info-form">Create Account</button>
+            <div>Already have an account? <a href="">Log in</a></div>
         </section>
     </section>
 </body>
